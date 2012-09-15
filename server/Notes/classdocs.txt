@@ -1,0 +1,17 @@
+
+// Handles all the worlds
+World-Manager
+     Worlds[]
+
+
+// World Handles GameLogic and syncing to its players
+World
+    Player []
+    WorldData {}
+    id int
+    name string
+
+
+// Serverwide Player service
+Player-Manager
+    Player[]

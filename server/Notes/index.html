@@ -1,0 +1,28 @@
+<html>
+    <head> 
+      <title> Eternal Boss Battles :: Alpha </title>
+    </head>
+       <body bgcolor="black">
+       <center>
+        	<div id="info" style="width: 768px;">
+    			<div id="jsapp">
+    				<font color="#FFFFFF", style="position: absolute; font-size: 10px; font-family: Courier New">
+    					<span id="framecounter">(0/0 fps)</span>
+    				</font>
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+                      <script src="../socket.io/socket.io.js"></script>
+                      <script type="text/javascript">
+                        $(function(){
+                            socket = io.connect('http://eternal_boss_battles.fusspawn.c9.io');
+                            
+                            socket.on("news", function(data) {
+                                console.log(data);    
+                            });
+                        });
+                      </script>
+    			</div>
+    		</div>
+            <div id="motd" style="color:white;"> </div> 
+        </center>
+	</body>
+</html>
