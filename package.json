@@ -2,11 +2,9 @@
   "name": "ebb",
   "version": "0.0.1",
   "dependencies": {
-    "underscore": "latest"
+    "underscore": "latest",
+    "socket.io": "latest"
   },
- "bundledDependencies": 
-    ["socket.io", "hiredis"]
-  ,
   "engines": {
     "node": "0.8.8",
     "npm": "1.1.49"
