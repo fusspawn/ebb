@@ -6,7 +6,7 @@ var app = require('http').createServer(static_handler)
   , WorldMan = require('./server/managers/world-manager.js')
   , PlayMan = require("./server/managers/player-manager.js")
 
-app.listen(process.env.PORT, process.env.HOST);
+app.listen(8080);
 
 server = {};
 server.world_manager = new WorldMan();
