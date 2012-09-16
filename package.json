@@ -5,7 +5,7 @@
     "underscore": "latest"
   },
  "bundledDependencies": 
-    ["socket.io"]
+    ["socket.io", "hiredis"]
   ,
   "engines": {
     "node": "0.8.8",
